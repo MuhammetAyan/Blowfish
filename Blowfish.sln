@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blowfish", "Blowfish\Blowfish.csproj", "{2EB3069F-12B5-4CE5-A772-238FFBCC40FA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlowfishUI", "BlowfishUI\BlowfishUI.csproj", "{320638F6-9827-43F2-B5BB-DCA038733005}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blowfish", "Blowfish\Blowfish.csproj", "{B0F47525-5718-4BDF-A8CA-D2A9C47F6E63}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2EB3069F-12B5-4CE5-A772-238FFBCC40FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2EB3069F-12B5-4CE5-A772-238FFBCC40FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2EB3069F-12B5-4CE5-A772-238FFBCC40FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2EB3069F-12B5-4CE5-A772-238FFBCC40FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{320638F6-9827-43F2-B5BB-DCA038733005}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{320638F6-9827-43F2-B5BB-DCA038733005}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{320638F6-9827-43F2-B5BB-DCA038733005}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{320638F6-9827-43F2-B5BB-DCA038733005}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0F47525-5718-4BDF-A8CA-D2A9C47F6E63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0F47525-5718-4BDF-A8CA-D2A9C47F6E63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0F47525-5718-4BDF-A8CA-D2A9C47F6E63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0F47525-5718-4BDF-A8CA-D2A9C47F6E63}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
