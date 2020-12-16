@@ -5,8 +5,14 @@ using Blowfish;
 namespace Test
 {
     [TestClass]
-    public class UnitTest1
+    public class UnitHelper
     {
+        private Helper hlp;
+        public UnitHelper()
+        {
+            hlp = new Helper();
+        }
+
         [TestMethod]
         [DataRow("FF", "11111111")]
         [DataRow("F", "1111")]
@@ -18,8 +24,7 @@ namespace Test
         [DataRow("C9", "11001001")]
         public void hexToBin(string hex, string expected)
         {
-            var b = new Blowfish.Class1();
-            Assert.AreEqual(b.hexToBin(hex), expected);
+            Assert.AreEqual(hlp.hexToBin(hex), expected);
 
         }
         [TestMethod]
@@ -30,17 +35,21 @@ namespace Test
         [DataRow("11001001", "C9")]
         public void binToHex(string binary, string expected)
         {
-            var b = new Blowfish.Class1();
-            Assert.AreEqual(b.binToHex(binary), expected);
+            Assert.AreEqual(hlp.binToHex(binary), expected);
 
         }
 
-        //[TestMethod]
-        //[DataRow("data", 0, 4, "data")]
-        //[DataRow("data", 0, 5, "data")]
-        //public void substring(string source, int start, int length, string expected)
-        //{
-        //    Assert.AreEqual(source.Substring(start, length), expected);
-        //}
+        [TestMethod]
+        [DataRow("1100", "1010", "0110")]
+        [DataRow("1", "1", "0")]
+        [DataRow("0", "0", "0")]
+        [DataRow("0", "1", "1")]
+        [DataRow("1", "0", "1")]
+        [DataRow("110", "100", "010")]
+        public void xor(string a, string b, string expected)
+        {
+            Assert.AreEqual(hlp.xor(a, b), expected);
+        }
+
     }
 }

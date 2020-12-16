@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Blowfish
 {
-    public class Class1
+    public class Helper
     {
         private static Dictionary<char, string> hexbin = new Dictionary<char, string>() {
             { '0',  "0000" },
@@ -62,9 +62,22 @@ namespace Blowfish
             for (int i = 0; i < binary.Length; i+=4)
             {
                 int length = Math.Min(4, binary.Length - i);
-                hex += binhex[binary.Substring(i, length)];
+                hex += binhex[binary.Substring(i, length).PadLeft(4, '0')];
             }
             return hex;
         }
+
+        public string xor(string a, string b)
+        {
+            a = hexToBin(a);
+            b = hexToBin(b);
+            string ans = "";
+            for (int i = 0; i < a.Length; i++)
+                ans += (char)(((a[i] - '0') ^ (b[i] - '0')) + '0');
+            ans = binToHex(ans);
+            return ans;
+        }
+
+
     }
 }
